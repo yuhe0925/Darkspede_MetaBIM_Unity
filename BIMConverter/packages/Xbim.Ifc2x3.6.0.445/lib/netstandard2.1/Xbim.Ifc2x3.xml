@@ -1,0 +1,2232 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Xbim.Ifc2x3</name>
+    </assembly>
+    <members>
+        <member name="M:Xbim.Ifc2x3.ActorResource.IfcActorRole.ConvertRoleString(System.String,Xbim.Ifc2x3.ActorResource.IfcRoleEnum@,System.Nullable{Xbim.Ifc2x3.MeasureResource.IfcLabel}@)">
+            <summary>
+              Converts a string to a Role or a User defined role if necessary
+            </summary>
+            <param name = "value"></param>
+            <param name="role"></param>
+            <param name="userDefinedRole"></param>
+        </member>
+        <member name="P:Xbim.Ifc2x3.ActorResource.IfcActorRole.RoleString">
+            <summary>
+              Gets or Sets the Role, if the name provided matches on of the Role enums, the enum is selected, otherwise a userdefined role is created. Use this to simplify binding
+            </summary>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ActorResource.IfcActorRole.ValidateClause(Xbim.Ifc2x3.ActorResource.IfcActorRole.IfcActorRoleClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ActorResource.IfcAddress.ValidateClause(Xbim.Ifc2x3.ActorResource.IfcAddress.IfcAddressClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ActorResource.IfcPerson.ValidateClause(Xbim.Ifc2x3.ActorResource.IfcPerson.IfcPersonClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ActorResource.IfcPostalAddress.ValidateClause(Xbim.Ifc2x3.ActorResource.IfcPostalAddress.IfcPostalAddressClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ActorResource.IfcTelecomAddress.ValidateClause(Xbim.Ifc2x3.ActorResource.IfcTelecomAddress.IfcTelecomAddressClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ConstraintResource.IfcConstraint.ValidateClause(Xbim.Ifc2x3.ConstraintResource.IfcConstraint.IfcConstraintClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ConstraintResource.IfcConstraintAggregationRelationship.ValidateClause(Xbim.Ifc2x3.ConstraintResource.IfcConstraintAggregationRelationship.IfcConstraintAggregationRelationshipClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ConstraintResource.IfcConstraintRelationship.ValidateClause(Xbim.Ifc2x3.ConstraintResource.IfcConstraintRelationship.IfcConstraintRelationshipClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ConstraintResource.IfcObjective.ValidateClause(Xbim.Ifc2x3.ConstraintResource.IfcObjective.IfcObjectiveClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ConstructionMgmtDomain.IfcConstructionMaterialResource.ValidateClause(Xbim.Ifc2x3.ConstructionMgmtDomain.IfcConstructionMaterialResource.IfcConstructionMaterialResourceClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ConstructionMgmtDomain.IfcConstructionProductResource.ValidateClause(Xbim.Ifc2x3.ConstructionMgmtDomain.IfcConstructionProductResource.IfcConstructionProductResourceClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ControlExtension.IfcTimeSeriesSchedule.ValidateClause(Xbim.Ifc2x3.ControlExtension.IfcTimeSeriesSchedule.IfcTimeSeriesScheduleClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.CostResource.IfcAppliedValue.ValidateClause(Xbim.Ifc2x3.CostResource.IfcAppliedValue.IfcAppliedValueClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.CostResource.IfcEnvironmentalImpactValue.ValidateClause(Xbim.Ifc2x3.CostResource.IfcEnvironmentalImpactValue.IfcEnvironmentalImpactValueClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.DateTimeResource.IfcCalendarDate.ValidateClause(Xbim.Ifc2x3.DateTimeResource.IfcCalendarDate.IfcCalendarDateClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.DateTimeResource.DateTimeSelectExtensions.AsString(Xbim.Ifc2x3.DateTimeResource.IfcDateTimeSelect)">
+            <summary>
+            Get the string value for the IfcDateTimeSelect
+            </summary>
+            <param name="ifcDateTimeSelect">IfcDateTimeSelect</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.DateTimeResource.IfcDaylightSavingHour.ValidateClause(Xbim.Ifc2x3.DateTimeResource.IfcDaylightSavingHour.IfcDaylightSavingHourClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.DateTimeResource.IfcHourInDay.ValidateClause(Xbim.Ifc2x3.DateTimeResource.IfcHourInDay.IfcHourInDayClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.DateTimeResource.IfcLocalTime.ValidateClause(Xbim.Ifc2x3.DateTimeResource.IfcLocalTime.IfcLocalTimeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.DateTimeResource.IfcMinuteInHour.ValidateClause(Xbim.Ifc2x3.DateTimeResource.IfcMinuteInHour.IfcMinuteInHourClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.DateTimeResource.IfcMonthInYearNumber.ValidateClause(Xbim.Ifc2x3.DateTimeResource.IfcMonthInYearNumber.IfcMonthInYearNumberClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.DateTimeResource.IfcSecondInMinute.ValidateClause(Xbim.Ifc2x3.DateTimeResource.IfcSecondInMinute.IfcSecondInMinuteClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ElectricalDomain.IfcCableCarrierFittingType.ValidateClause(Xbim.Ifc2x3.ElectricalDomain.IfcCableCarrierFittingType.IfcCableCarrierFittingTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ElectricalDomain.IfcElectricDistributionPoint.ValidateClause(Xbim.Ifc2x3.ElectricalDomain.IfcElectricDistributionPoint.IfcElectricDistributionPointClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.EntityFactoryIfc2x3.SchemaVersion">
+            <summary>
+            Gets the Ifc Schema version of the model if this is IFC schema
+            </summary>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ExternalReferenceResource.IfcDocumentElectronicFormat.ValidateClause(Xbim.Ifc2x3.ExternalReferenceResource.IfcDocumentElectronicFormat.IfcDocumentElectronicFormatClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ExternalReferenceResource.IfcDocumentReference.ValidateClause(Xbim.Ifc2x3.ExternalReferenceResource.IfcDocumentReference.IfcDocumentReferenceClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ExternalReferenceResource.IfcExternalReference.ValidateClause(Xbim.Ifc2x3.ExternalReferenceResource.IfcExternalReference.IfcExternalReferenceClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.FacilitiesMgmtDomain.IfcConditionCriterion.ValidateClause(Xbim.Ifc2x3.FacilitiesMgmtDomain.IfcConditionCriterion.IfcConditionCriterionClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.FacilitiesMgmtDomain.IfcMove.ValidateClause(Xbim.Ifc2x3.FacilitiesMgmtDomain.IfcMove.IfcMoveClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.ValidateClause(Xbim.Ifc2x3.GeometricConstraintResource.IfcGridAxis.IfcGridAxisClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometricConstraintResource.IfcLocalPlacement.ValidateClause(Xbim.Ifc2x3.GeometricConstraintResource.IfcLocalPlacement.IfcLocalPlacementClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometricModelResource.IfcBooleanClippingResult.ValidateClause(Xbim.Ifc2x3.GeometricModelResource.IfcBooleanClippingResult.IfcBooleanClippingResultClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometricModelResource.IfcBooleanResult.ValidateClause(Xbim.Ifc2x3.GeometricModelResource.IfcBooleanResult.IfcBooleanResultClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometricModelResource.IfcBoxedHalfSpace.ValidateClause(Xbim.Ifc2x3.GeometricModelResource.IfcBoxedHalfSpace.IfcBoxedHalfSpaceClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometricModelResource.IfcExtrudedAreaSolid.ValidateClause(Xbim.Ifc2x3.GeometricModelResource.IfcExtrudedAreaSolid.IfcExtrudedAreaSolidClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometricModelResource.IfcGeometricCurveSet.ValidateClause(Xbim.Ifc2x3.GeometricModelResource.IfcGeometricCurveSet.IfcGeometricCurveSetClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometricModelResource.IfcGeometricSet.ValidateClause(Xbim.Ifc2x3.GeometricModelResource.IfcGeometricSet.IfcGeometricSetClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometricModelResource.IfcPolygonalBoundedHalfSpace.ValidateClause(Xbim.Ifc2x3.GeometricModelResource.IfcPolygonalBoundedHalfSpace.IfcPolygonalBoundedHalfSpaceClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometricModelResource.IfcRevolvedAreaSolid.ValidateClause(Xbim.Ifc2x3.GeometricModelResource.IfcRevolvedAreaSolid.IfcRevolvedAreaSolidClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometricModelResource.IfcSectionedSpine.ValidateClause(Xbim.Ifc2x3.GeometricModelResource.IfcSectionedSpine.IfcSectionedSpineClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometricModelResource.IfcSweptAreaSolid.ValidateClause(Xbim.Ifc2x3.GeometricModelResource.IfcSweptAreaSolid.IfcSweptAreaSolidClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometricModelResource.IfcSweptDiskSolid.ValidateClause(Xbim.Ifc2x3.GeometricModelResource.IfcSweptDiskSolid.IfcSweptDiskSolidClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.Ifc2DCompositeCurve.ValidateClause(Xbim.Ifc2x3.GeometryResource.Ifc2DCompositeCurve.Ifc2DCompositeCurveClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcAxis1Placement.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcAxis1Placement.IfcAxis1PlacementClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement2D.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement2D.IfcAxis2Placement2DClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcAxis2Placement3D.IfcAxis2Placement3DClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcBSplineCurve.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcBSplineCurve.IfcBSplineCurveClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcCartesianPoint.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcCartesianPoint.IfcCartesianPointClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcCartesianTransformationOperator.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcCartesianTransformationOperator.IfcCartesianTransformationOperatorClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcCartesianTransformationOperator2D.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcCartesianTransformationOperator2D.IfcCartesianTransformationOperator2DClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcCartesianTransformationOperator2DnonUniform.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcCartesianTransformationOperator2DnonUniform.IfcCartesianTransformationOperator2DnonUniformClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcCartesianTransformationOperator3D.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcCartesianTransformationOperator3D.IfcCartesianTransformationOperator3DClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcCartesianTransformationOperator3DnonUniform.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcCartesianTransformationOperator3DnonUniform.IfcCartesianTransformationOperator3DnonUniformClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcCompositeCurve.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcCompositeCurve.IfcCompositeCurveClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcCompositeCurveSegment.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcCompositeCurveSegment.IfcCompositeCurveSegmentClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcDimensionCount.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcDimensionCount.IfcDimensionCountClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcDirection.op_Implicit(Xbim.Common.Geometry.XbimVector3D)~Xbim.Ifc2x3.GeometryResource.IfcDirection">
+            <summary>
+            Do not use this conversion operator unless you are absolutely sure you know what you do.
+            Resulting object is not a properpart of the model and will throw an exception if you
+            try to modify it or anything. It is only used in IfcGeometricRepresentationSubContext.TrueNorth where
+            derived attribute is returned in derived overwriting attribute.
+            </summary>
+            <param name="vector"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcDirection.Normalise">
+            <summary>
+            Computes and returns the normalised vector for the direction.
+            </summary>
+            <returns>A 1-length vector if the direction is meaningful or a 0-length vector otherwise</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcLine.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcLine.IfcLineClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcOffsetCurve2D.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcOffsetCurve2D.IfcOffsetCurve2DClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcOffsetCurve3D.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcOffsetCurve3D.IfcOffsetCurve3DClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcPolyline.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcPolyline.IfcPolylineClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcRationalBezierCurve.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcRationalBezierCurve.IfcRationalBezierCurveClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcRectangularTrimmedSurface.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcRectangularTrimmedSurface.IfcRectangularTrimmedSurfaceClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcSurfaceOfLinearExtrusion.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcSurfaceOfLinearExtrusion.IfcSurfaceOfLinearExtrusionClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcSweptSurface.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcSweptSurface.IfcSweptSurfaceClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcTrimmedCurve.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcTrimmedCurve.IfcTrimmedCurveClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.GeometryResource.IfcVector.ValidateClause(Xbim.Ifc2x3.GeometryResource.IfcVector.IfcVectorClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcAirTerminalBoxType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcAirTerminalBoxType.IfcAirTerminalBoxTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcAirTerminalType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcAirTerminalType.IfcAirTerminalTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcAirToAirHeatRecoveryType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcAirToAirHeatRecoveryType.IfcAirToAirHeatRecoveryTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcBoilerType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcBoilerType.IfcBoilerTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcChillerType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcChillerType.IfcChillerTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcCoilType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcCoilType.IfcCoilTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcCompressorType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcCompressorType.IfcCompressorTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcCondenserType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcCondenserType.IfcCondenserTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcCooledBeamType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcCooledBeamType.IfcCooledBeamTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcCoolingTowerType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcCoolingTowerType.IfcCoolingTowerTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcDamperType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcDamperType.IfcDamperTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcDuctFittingType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcDuctFittingType.IfcDuctFittingTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcDuctSegmentType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcDuctSegmentType.IfcDuctSegmentTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcDuctSilencerType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcDuctSilencerType.IfcDuctSilencerTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcEvaporativeCoolerType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcEvaporativeCoolerType.IfcEvaporativeCoolerTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcEvaporatorType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcEvaporatorType.IfcEvaporatorTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcFanType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcFanType.IfcFanTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcFilterType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcFilterType.IfcFilterTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcFlowMeterType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcFlowMeterType.IfcFlowMeterTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcGasTerminalType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcGasTerminalType.IfcGasTerminalTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcHeatExchangerType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcHeatExchangerType.IfcHeatExchangerTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcHumidifierType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcHumidifierType.IfcHumidifierTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcPipeFittingType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcPipeFittingType.IfcPipeFittingTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcPipeSegmentType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcPipeSegmentType.IfcPipeSegmentTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcPumpType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcPumpType.IfcPumpTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcSpaceHeaterType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcSpaceHeaterType.IfcSpaceHeaterTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcTankType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcTankType.IfcTankTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcTubeBundleType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcTubeBundleType.IfcTubeBundleTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcUnitaryEquipmentType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcUnitaryEquipmentType.IfcUnitaryEquipmentTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcValveType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcValveType.IfcValveTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.HVACDomain.IfcVibrationIsolatorType.ValidateClause(Xbim.Ifc2x3.HVACDomain.IfcVibrationIsolatorType.IfcVibrationIsolatorTypeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Functions.IfcConstraintsParamBSpline(Xbim.Ifc2x3.MeasureResource.IfcInteger,Xbim.Ifc2x3.MeasureResource.IfcInteger,Xbim.Ifc2x3.MeasureResource.IfcInteger,Xbim.Common.IItemSet{Xbim.Ifc2x3.MeasureResource.IfcInteger},Xbim.Common.IItemSet{Xbim.Ifc2x3.MeasureResource.IfcParameterValue})">
+            <summary>
+            Todo: add summary
+            </summary>
+            <param name="Degree">degree</param>
+            <param name="UpKnots">upperIndexOnKnots</param>
+            <param name="UpCp">upperIndexOnControlPoints</param>
+            <param name="KnotMult">knotMultiplicities</param>
+            <param name="Knots">knots</param>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.Interfaces.Conversions.PersistEntityTransient.EntityLabel">
+            <summary>
+            This is a transient object which is not a part of the model
+            </summary>
+        </member>
+        <member name="P:Xbim.Ifc2x3.Interfaces.Conversions.PersistEntityTransient.Model">
+            <summary>
+            If not overwritten in derived classes this always returns null
+            </summary>
+        </member>
+        <member name="P:Xbim.Ifc2x3.Interfaces.Conversions.PersistEntityTransient.Activated">
+            <summary>
+            Transient objects are only for reading.
+            </summary>
+        </member>
+        <member name="P:Xbim.Ifc2x3.Interfaces.Conversions.PersistEntityTransient.ExpressType">
+            <summary>
+            This property will always return null if 'Model' property is not overwritten in derived class
+            </summary>
+        </member>
+        <member name="P:Xbim.Ifc2x3.Kernel.IfcObject.IsTypedBy">
+            <summary>
+            Specific type information  that is common to all instances of IfcObject refering to the same type.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcObject.AddDefiningType(Xbim.Ifc2x3.Kernel.IfcTypeObject)">
+            <summary>
+            Adds an element type to the object if it doesn't already have one, return the new or existing relationship that holds the type and this element. If there is a relationship for this type but this element is not related it adds it to the exosting relationship
+            </summary>
+            <param name="theType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcObject.AddPropertySet(Xbim.Ifc2x3.Kernel.IfcPropertySet)">
+            <summary>
+            Adds an existing property set to the objecty, NB no check is done for duplicate psets
+            </summary>
+            <param name="pSet"></param>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcObject.GetPropertySet(System.String,System.Boolean)">
+            <summary>
+            Returns the propertyset of the specified name, null if it does not exist
+            </summary>
+            <param name="pSetName"></param>
+            <param name="caseSensitive"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcObject.GetPropertySingleNominalValue(System.String,System.String)">
+            <summary>
+            If the property value exists, returns the Nominal Value of the contents
+            </summary>
+            <param name="pSetName"></param>
+            <param name="propertyName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcObject.SetPropertySingleValue(System.String,System.String,System.Type)">
+            <summary>
+            Creates property single value with specified type and default value of this type (0 for numeric types, empty string tor string types and false for bool types)
+            </summary>
+            <param name="pSetName">Property set name</param>
+            <param name="propertyName">Property name</param>
+            <param name="type">Type of the property</param>
+            <returns>Property single value with default value of the specified type</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcObject.GetExternalElements(Xbim.Common.IModel)">
+            <summary>
+            Returns a list of all the elements that bound the external of the building 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.Kernel.IfcObject.ElementQuantities">
+            <summary>
+            Use this method to get all element quantities related to this object
+            </summary>
+            <returns>All related element quantities</returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.Kernel.IfcObject.PhysicalSimpleQuantities">
+            <summary>
+            Use this to get all physical simple quantities (like length, area, volume, count, etc.)
+            </summary>
+            <returns>All physical simple quantities (like length, area, volume, count, etc.)</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcObject.GetQuantity``1(System.String,System.String)">
+            <summary>
+            Returns the first quantity in the property set pSetName of name qName
+            </summary>
+            <typeparam name="TQType"></typeparam>
+            <param name="pSetName"></param>
+            <param name="qName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcObject.GetQuantity``1(System.String)">
+            <summary>
+            Returns the first quantity that matches the quantity name
+            </summary>
+            <typeparam name="TQType"></typeparam>
+            <param name="qName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcObject.AddQuantity(System.String,Xbim.Ifc2x3.QuantityResource.IfcPhysicalQuantity,System.String)">
+            <summary>
+            Adds a new IfcPhysicalQuantity to the IfcElementQuantity called propertySetName
+            </summary>
+            <param name="propertySetName">Name of the IfcElementQuantity property set</param>
+            <param name="quantity">quantity to be added</param>
+            <param name="methodOfMeasurement">Sets the method of measurement, if not null overrides previous value</param>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcObject.AddQuantity(System.String,Xbim.Ifc2x3.QuantityResource.IfcPhysicalQuantity)">
+            <summary>
+            Adds a new IfcPhysicalQuantity to the IfcElementQuantity called propertySetName
+            </summary>
+            <param name="propertySetName">Name of the IfcElementQuantity property set</param>
+            <param name="quantity">quantity to be added</param>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcObject.GetElementPhysicalSimpleQuantity(System.String,System.String)">
+            <summary>
+            Returns simple physical quality of the element.
+            </summary>
+            <param name="pSetName"></param>
+            <param name="qualityName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcObject.ValidateClause(Xbim.Ifc2x3.Kernel.IfcObject.IfcObjectClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcProduct.ValidateClause(Xbim.Ifc2x3.Kernel.IfcProduct.IfcProductClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcProject.Initialize(Xbim.Common.ProjectUnits)">
+            <summary>
+              Sets up the default units as SI
+              Creates the GeometricRepresentationContext for a Model view, required by Ifc compliance
+            </summary>
+        </member>
+        <member name="P:Xbim.Ifc2x3.Kernel.IfcProject.Buildings">
+            <summary>
+            Returns all buildings at the highest level of spatial structural decomposition (i.e. root buildings)
+            </summary>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcProject.BuildName">
+            <summary>
+            Makes a name out of the fields of this project
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcProject.AddSite(Xbim.Ifc2x3.ProductExtension.IfcSite)">
+            <summary>
+              Adds Site to the IsDecomposedBy Collection.
+            </summary>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcProject.AddBuilding(Xbim.Ifc2x3.ProductExtension.IfcBuilding)">
+            <summary>
+              Adds Building to the IsDecomposedBy Collection.
+            </summary>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcProject.ValidateClause(Xbim.Ifc2x3.Kernel.IfcProject.IfcProjectClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcPropertySet.ValidateClause(Xbim.Ifc2x3.Kernel.IfcPropertySet.IfcPropertySetClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcProxy.ValidateClause(Xbim.Ifc2x3.Kernel.IfcProxy.IfcProxyClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcRelAssigns.ValidateClause(Xbim.Ifc2x3.Kernel.IfcRelAssigns.IfcRelAssignsClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcRelAssignsToActor.ValidateClause(Xbim.Ifc2x3.Kernel.IfcRelAssignsToActor.IfcRelAssignsToActorClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcRelAssignsToControl.ValidateClause(Xbim.Ifc2x3.Kernel.IfcRelAssignsToControl.IfcRelAssignsToControlClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcRelAssignsToGroup.ValidateClause(Xbim.Ifc2x3.Kernel.IfcRelAssignsToGroup.IfcRelAssignsToGroupClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcRelAssignsToProcess.ValidateClause(Xbim.Ifc2x3.Kernel.IfcRelAssignsToProcess.IfcRelAssignsToProcessClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcRelAssignsToProduct.ValidateClause(Xbim.Ifc2x3.Kernel.IfcRelAssignsToProduct.IfcRelAssignsToProductClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcRelAssignsToResource.ValidateClause(Xbim.Ifc2x3.Kernel.IfcRelAssignsToResource.IfcRelAssignsToResourceClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcRelAssociates.ValidateClause(Xbim.Ifc2x3.Kernel.IfcRelAssociates.IfcRelAssociatesClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcRelDecomposes.ValidateClause(Xbim.Ifc2x3.Kernel.IfcRelDecomposes.IfcRelDecomposesClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcRelNests.ValidateClause(Xbim.Ifc2x3.Kernel.IfcRelNests.IfcRelNestsClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcRelSequence.ValidateClause(Xbim.Ifc2x3.Kernel.IfcRelSequence.IfcRelSequenceClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcTypeObject.GetPropertySet(System.String,System.Boolean)">
+            <summary>
+            Returns the propertyset of the specified name, null if it does not exist
+            </summary>
+            <param name="pSetName"></param>
+            <param name="caseSensitive"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.Kernel.IfcTypeObject.PhysicalSimpleQuantities">
+            <summary>
+            Use this to get all physical simple quantities (like length, area, volume, count, etc.)
+            </summary>
+            <returns>All physical simple quantities (like length, area, volume, count, etc.)</returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.Kernel.IfcTypeObject.ElementQuantities">
+            <summary>
+            Use this method to get all element quantities related to this object
+            </summary>
+            <returns>All related element quantities</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcTypeObject.ValidateClause(Xbim.Ifc2x3.Kernel.IfcTypeObject.IfcTypeObjectClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcTypeProduct.ValidateClause(Xbim.Ifc2x3.Kernel.IfcTypeProduct.IfcTypeProductClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.Kernel.IfcRelOverridesProperties.ValidateClause(Xbim.Ifc2x3.Kernel.IfcRelOverridesProperties.IfcRelOverridesPropertiesClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.ProductExtension.IfcBuilding.Site">
+            <summary>
+            Returns the site (if any) that contains this building, null if the building is not decomposing a site
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.ProductExtension.IfcBuilding.Buildings">
+            <summary>
+            Returns the buidlings that decompose this building
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.ProductExtension.IfcBuilding.Spaces">
+            <summary>
+            Returns all spaces that are sub-spaces of this building
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.ProductExtension.IfcBuilding.GrossFloorArea">
+            <summary>
+            Gets the Gross Floor Area, if the element base quantity GrossFloorArea is defined this has precedence
+            If no property is defined the GFA is returned as the sume of the building storeys GFA
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.ProductExtension.IfcBuilding.BuildingStoreys">
+            <summary>
+            Returns the building storeys for this floor  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProductExtension.IfcBuildingElementProxy.ValidateClause(Xbim.Ifc2x3.ProductExtension.IfcBuildingElementProxy.IfcBuildingElementProxyClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.ProductExtension.IfcBuildingStorey.GrossFloorArea">
+            <summary>
+            Returns the Gross Floor Area, if the element base quantity GrossFloorArea is defined
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.ProductExtension.IfcBuildingStorey.Spaces">
+            <summary>
+            Returns all spaces that are sub-spaces of this storey
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProductExtension.IfcCovering.ValidateClause(Xbim.Ifc2x3.ProductExtension.IfcCovering.IfcCoveringClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProductExtension.IfcElementAssembly.ValidateClause(Xbim.Ifc2x3.ProductExtension.IfcElementAssembly.IfcElementAssemblyClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProductExtension.IfcGrid.ValidateClause(Xbim.Ifc2x3.ProductExtension.IfcGrid.IfcGridClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProductExtension.IfcRelAssociatesMaterial.ValidateClause(Xbim.Ifc2x3.ProductExtension.IfcRelAssociatesMaterial.IfcRelAssociatesMaterialClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProductExtension.IfcRelConnectsElements.ValidateClause(Xbim.Ifc2x3.ProductExtension.IfcRelConnectsElements.IfcRelConnectsElementsClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProductExtension.IfcRelContainedInSpatialStructure.ValidateClause(Xbim.Ifc2x3.ProductExtension.IfcRelContainedInSpatialStructure.IfcRelContainedInSpatialStructureClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProductExtension.IfcRelReferencedInSpatialStructure.ValidateClause(Xbim.Ifc2x3.ProductExtension.IfcRelReferencedInSpatialStructure.IfcRelReferencedInSpatialStructureClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProductExtension.IfcRelSpaceBoundary.ValidateClause(Xbim.Ifc2x3.ProductExtension.IfcRelSpaceBoundary.IfcRelSpaceBoundaryClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.ProductExtension.IfcSite.FootprintArea">
+            <summary>
+            Returns the projected footprint are of the site, this value is derived and makes use of property sets not in the ifc schema
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.ProductExtension.IfcSite.Buildings">
+            <summary>
+            Returns all buildings at the highest level of spatial structural decomposition (i.e. root buildings for this site)
+            </summary>
+        </member>
+        <member name="P:Xbim.Ifc2x3.ProductExtension.IfcSpace.Spaces">
+            <summary>
+            Returns all spaces that are sub-spaces of this space
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.ProductExtension.IfcSpace.GrossFloorArea">
+            <summary>
+            Returns the Gross Floor Area, if the element base quantity GrossFloorArea is defined
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.ProductExtension.IfcSpace.NetFloorArea">
+            <summary>
+            Returns the Net Floor Area, if the element base quantity GrossFloorArea is defined
+            Will use GSA Space Areas if the Ifc common property NetFloorArea is not defined
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.ProductExtension.IfcSpace.Height">
+            <summary>
+            Returns the Height, if the element base quantity Height is defined
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.ProductExtension.IfcSpace.GrossPerimeter">
+            <summary>
+            Returns the Perimeter, if the element base quantity GrossPerimeter is defined
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProductExtension.IfcSpatialStructureElement.ValidateClause(Xbim.Ifc2x3.ProductExtension.IfcSpatialStructureElement.IfcSpatialStructureElementClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProductExtension.IfcZone.ValidateClause(Xbim.Ifc2x3.ProductExtension.IfcZone.IfcZoneClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationDefinitionResource.IfcTextLiteralWithExtent.ValidateClause(Xbim.Ifc2x3.PresentationDefinitionResource.IfcTextLiteralWithExtent.IfcTextLiteralWithExtentClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationDefinitionResource.IfcTextureMap.ValidateClause(Xbim.Ifc2x3.PresentationDefinitionResource.IfcTextureMap.IfcTextureMapClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationDefinitionResource.IfcAnnotationCurveOccurrence.ValidateClause(Xbim.Ifc2x3.PresentationDefinitionResource.IfcAnnotationCurveOccurrence.IfcAnnotationCurveOccurrenceClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationDefinitionResource.IfcAnnotationFillAreaOccurrence.ValidateClause(Xbim.Ifc2x3.PresentationDefinitionResource.IfcAnnotationFillAreaOccurrence.IfcAnnotationFillAreaOccurrenceClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationDefinitionResource.IfcAnnotationSurface.ValidateClause(Xbim.Ifc2x3.PresentationDefinitionResource.IfcAnnotationSurface.IfcAnnotationSurfaceClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationDefinitionResource.IfcAnnotationSurfaceOccurrence.ValidateClause(Xbim.Ifc2x3.PresentationDefinitionResource.IfcAnnotationSurfaceOccurrence.IfcAnnotationSurfaceOccurrenceClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationDefinitionResource.IfcAnnotationSymbolOccurrence.ValidateClause(Xbim.Ifc2x3.PresentationDefinitionResource.IfcAnnotationSymbolOccurrence.IfcAnnotationSymbolOccurrenceClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationDefinitionResource.IfcAnnotationTextOccurrence.ValidateClause(Xbim.Ifc2x3.PresentationDefinitionResource.IfcAnnotationTextOccurrence.IfcAnnotationTextOccurrenceClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationDefinitionResource.IfcBoxAlignment.ValidateClause(Xbim.Ifc2x3.PresentationDefinitionResource.IfcBoxAlignment.IfcBoxAlignmentClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.UtilityResource.IfcTable.ValidateClause(Xbim.Ifc2x3.UtilityResource.IfcTable.IfcTableClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.UtilityResource.IfcGloballyUniqueId.FromGuid(System.Guid)">
+            <summary>
+              Constructs a GloballyUniqueId from a System.Guid
+            </summary>
+        </member>
+        <member name="M:Xbim.Ifc2x3.UtilityResource.IfcGloballyUniqueId.ConvertToBase64(System.Guid)">
+            <summary>
+              Returns the 22 character length base 64 ifc compliant string
+            </summary>
+        </member>
+        <member name="M:Xbim.Ifc2x3.UtilityResource.IfcGloballyUniqueId.To64String(System.UInt32,System.Int32)">
+            <summary>
+              Helper function to convert from Guid to base 64 string
+            </summary>
+        </member>
+        <member name="M:Xbim.Ifc2x3.UtilityResource.IfcGloballyUniqueId.From64String(System.String)">
+            <summary>
+              Helper function to convert from base 64 string to Guid
+            </summary>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProfileResource.IfcArbitraryClosedProfileDef.ValidateClause(Xbim.Ifc2x3.ProfileResource.IfcArbitraryClosedProfileDef.IfcArbitraryClosedProfileDefClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProfileResource.IfcArbitraryOpenProfileDef.ValidateClause(Xbim.Ifc2x3.ProfileResource.IfcArbitraryOpenProfileDef.IfcArbitraryOpenProfileDefClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProfileResource.IfcArbitraryProfileDefWithVoids.ValidateClause(Xbim.Ifc2x3.ProfileResource.IfcArbitraryProfileDefWithVoids.IfcArbitraryProfileDefWithVoidsClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProfileResource.IfcCircleHollowProfileDef.ValidateClause(Xbim.Ifc2x3.ProfileResource.IfcCircleHollowProfileDef.IfcCircleHollowProfileDefClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProfileResource.IfcCompositeProfileDef.ValidateClause(Xbim.Ifc2x3.ProfileResource.IfcCompositeProfileDef.IfcCompositeProfileDefClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProfileResource.IfcCShapeProfileDef.ValidateClause(Xbim.Ifc2x3.ProfileResource.IfcCShapeProfileDef.IfcCShapeProfileDefClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProfileResource.IfcDerivedProfileDef.ValidateClause(Xbim.Ifc2x3.ProfileResource.IfcDerivedProfileDef.IfcDerivedProfileDefClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.ValidateClause(Xbim.Ifc2x3.ProfileResource.IfcIShapeProfileDef.IfcIShapeProfileDefClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProfileResource.IfcLShapeProfileDef.ValidateClause(Xbim.Ifc2x3.ProfileResource.IfcLShapeProfileDef.IfcLShapeProfileDefClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProfileResource.IfcRectangleHollowProfileDef.ValidateClause(Xbim.Ifc2x3.ProfileResource.IfcRectangleHollowProfileDef.IfcRectangleHollowProfileDefClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProfileResource.IfcRoundedRectangleProfileDef.ValidateClause(Xbim.Ifc2x3.ProfileResource.IfcRoundedRectangleProfileDef.IfcRoundedRectangleProfileDefClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProfileResource.IfcTShapeProfileDef.ValidateClause(Xbim.Ifc2x3.ProfileResource.IfcTShapeProfileDef.IfcTShapeProfileDefClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProfileResource.IfcUShapeProfileDef.ValidateClause(Xbim.Ifc2x3.ProfileResource.IfcUShapeProfileDef.IfcUShapeProfileDefClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProfileResource.IfcZShapeProfileDef.ValidateClause(Xbim.Ifc2x3.ProfileResource.IfcZShapeProfileDef.IfcZShapeProfileDefClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.ValidateClause(Xbim.Ifc2x3.SharedFacilitiesElements.IfcAsset.IfcAssetClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.SharedFacilitiesElements.IfcInventory.ValidateClause(Xbim.Ifc2x3.SharedFacilitiesElements.IfcInventory.IfcInventoryClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.SharedFacilitiesElements.IfcOccupant.ValidateClause(Xbim.Ifc2x3.SharedFacilitiesElements.IfcOccupant.IfcOccupantClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.SharedBldgElements.IfcDoor.Reference">
+            <summary>
+            Returns the Reference ID for this specified type in this project (e.g. type 'A-1'), if known
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.SharedBldgElements.IfcDoor.IsExternal">
+            <summary>
+            Returns if the door is external
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.SharedBldgElements.IfcDoor.FireExit">
+            <summary>
+            Returns whether the door is a Fire Exit or not, null if not known
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.SharedBldgElements.IfcDoor.FireRating">
+            <summary>
+            Returns the fire rating if defined
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.SharedBldgElements.IfcDoorLiningProperties.ValidateClause(Xbim.Ifc2x3.SharedBldgElements.IfcDoorLiningProperties.IfcDoorLiningPropertiesClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.SharedBldgElements.IfcDoorPanelProperties.ValidateClause(Xbim.Ifc2x3.SharedBldgElements.IfcDoorPanelProperties.IfcDoorPanelPropertiesClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.SharedBldgElements.IfcRailing.ValidateClause(Xbim.Ifc2x3.SharedBldgElements.IfcRailing.IfcRailingClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.SharedBldgElements.IfcRamp.ValidateClause(Xbim.Ifc2x3.SharedBldgElements.IfcRamp.IfcRampClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.SharedBldgElements.IfcRoof.ValidateClause(Xbim.Ifc2x3.SharedBldgElements.IfcRoof.IfcRoofClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.SharedBldgElements.IfcSlab.ValidateClause(Xbim.Ifc2x3.SharedBldgElements.IfcSlab.IfcSlabClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.SharedBldgElements.IfcStair.ValidateClause(Xbim.Ifc2x3.SharedBldgElements.IfcStair.IfcStairClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.SharedBldgElements.IfcWall.GetWallSideArea">
+            <summary>
+            Gets the area of the wall in elevation
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.SharedBldgElements.IfcWall.IsExternal">
+            <summary>
+            True if the wall is external
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.SharedBldgElements.IfcWall.ValidateClause(Xbim.Ifc2x3.SharedBldgElements.IfcWall.IfcWallClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.SharedBldgElements.IfcWallStandardCase.ValidateClause(Xbim.Ifc2x3.SharedBldgElements.IfcWallStandardCase.IfcWallStandardCaseClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.SharedBldgElements.IfcWindow.IsExternal">
+            <summary>
+            Returns if the door is external
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.SharedBldgElements.IfcWindow.Reference">
+            <summary>
+            Returns the Reference ID for this specified type in this project (e.g. type 'A-1'), if known
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.SharedBldgElements.IfcWindow.FireRating">
+            <summary>
+            Returns the fire rating if defined
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.SharedBldgElements.IfcWindowLiningProperties.ValidateClause(Xbim.Ifc2x3.SharedBldgElements.IfcWindowLiningProperties.IfcWindowLiningPropertiesClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationAppearanceResource.IfcBlobTexture.ValidateClause(Xbim.Ifc2x3.PresentationAppearanceResource.IfcBlobTexture.IfcBlobTextureClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationAppearanceResource.IfcCurveStyle.ValidateClause(Xbim.Ifc2x3.PresentationAppearanceResource.IfcCurveStyle.IfcCurveStyleClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationAppearanceResource.IfcCurveStyleFontPattern.ValidateClause(Xbim.Ifc2x3.PresentationAppearanceResource.IfcCurveStyleFontPattern.IfcCurveStyleFontPatternClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationAppearanceResource.IfcDraughtingPreDefinedCurveFont.ValidateClause(Xbim.Ifc2x3.PresentationAppearanceResource.IfcDraughtingPreDefinedCurveFont.IfcDraughtingPreDefinedCurveFontClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationAppearanceResource.IfcFillAreaStyle.ValidateClause(Xbim.Ifc2x3.PresentationAppearanceResource.IfcFillAreaStyle.IfcFillAreaStyleClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationAppearanceResource.IfcFillAreaStyleHatching.ValidateClause(Xbim.Ifc2x3.PresentationAppearanceResource.IfcFillAreaStyleHatching.IfcFillAreaStyleHatchingClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationAppearanceResource.IfcPixelTexture.ValidateClause(Xbim.Ifc2x3.PresentationAppearanceResource.IfcPixelTexture.IfcPixelTextureClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationAppearanceResource.IfcStyledItem.ValidateClause(Xbim.Ifc2x3.PresentationAppearanceResource.IfcStyledItem.IfcStyledItemClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationAppearanceResource.IfcSurfaceStyle.ValidateClause(Xbim.Ifc2x3.PresentationAppearanceResource.IfcSurfaceStyle.IfcSurfaceStyleClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationAppearanceResource.IfcSpecularRoughness.ValidateClause(Xbim.Ifc2x3.PresentationAppearanceResource.IfcSpecularRoughness.IfcSpecularRoughnessClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationAppearanceResource.IfcTextAlignment.ValidateClause(Xbim.Ifc2x3.PresentationAppearanceResource.IfcTextAlignment.IfcTextAlignmentClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationAppearanceResource.IfcTextDecoration.ValidateClause(Xbim.Ifc2x3.PresentationAppearanceResource.IfcTextDecoration.IfcTextDecorationClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationAppearanceResource.IfcTextTransformation.ValidateClause(Xbim.Ifc2x3.PresentationAppearanceResource.IfcTextTransformation.IfcTextTransformationClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.StructuralElementsDomain.IfcFooting.ValidateClause(Xbim.Ifc2x3.StructuralElementsDomain.IfcFooting.IfcFootingClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.StructuralElementsDomain.IfcPile.ValidateClause(Xbim.Ifc2x3.StructuralElementsDomain.IfcPile.IfcPileClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.StructuralElementsDomain.IfcReinforcingBar.ValidateClause(Xbim.Ifc2x3.StructuralElementsDomain.IfcReinforcingBar.IfcReinforcingBarClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.StructuralElementsDomain.IfcTendon.ValidateClause(Xbim.Ifc2x3.StructuralElementsDomain.IfcTendon.IfcTendonClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.TopologyResource.IfcEdgeLoop.ValidateClause(Xbim.Ifc2x3.TopologyResource.IfcEdgeLoop.IfcEdgeLoopClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.TopologyResource.IfcFace.ValidateClause(Xbim.Ifc2x3.TopologyResource.IfcFace.IfcFaceClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.TopologyResource.IfcOrientedEdge.ValidateClause(Xbim.Ifc2x3.TopologyResource.IfcOrientedEdge.IfcOrientedEdgeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.TopologyResource.IfcPath.ValidateClause(Xbim.Ifc2x3.TopologyResource.IfcPath.IfcPathClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.TopologyResource.IfcPolyLoop.ValidateClause(Xbim.Ifc2x3.TopologyResource.IfcPolyLoop.IfcPolyLoopClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationResource.IfcDraughtingPreDefinedColour.ValidateClause(Xbim.Ifc2x3.PresentationResource.IfcDraughtingPreDefinedColour.IfcDraughtingPreDefinedColourClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationResource.IfcTextStyleFontModel.ValidateClause(Xbim.Ifc2x3.PresentationResource.IfcTextStyleFontModel.IfcTextStyleFontModelClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationResource.IfcDraughtingPreDefinedTextFont.ValidateClause(Xbim.Ifc2x3.PresentationResource.IfcDraughtingPreDefinedTextFont.IfcDraughtingPreDefinedTextFontClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationResource.IfcFontStyle.ValidateClause(Xbim.Ifc2x3.PresentationResource.IfcFontStyle.IfcFontStyleClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationResource.IfcFontVariant.ValidateClause(Xbim.Ifc2x3.PresentationResource.IfcFontVariant.IfcFontVariantClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationResource.IfcFontWeight.ValidateClause(Xbim.Ifc2x3.PresentationResource.IfcFontWeight.IfcFontWeightClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PropertyResource.IfcComplexProperty.ValidateClause(Xbim.Ifc2x3.PropertyResource.IfcComplexProperty.IfcComplexPropertyClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PropertyResource.IfcPropertyBoundedValue.ValidateClause(Xbim.Ifc2x3.PropertyResource.IfcPropertyBoundedValue.IfcPropertyBoundedValueClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PropertyResource.IfcPropertyDependencyRelationship.ValidateClause(Xbim.Ifc2x3.PropertyResource.IfcPropertyDependencyRelationship.IfcPropertyDependencyRelationshipClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PropertyResource.IfcPropertyEnumeratedValue.ValidateClause(Xbim.Ifc2x3.PropertyResource.IfcPropertyEnumeratedValue.IfcPropertyEnumeratedValueClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PropertyResource.IfcPropertyEnumeration.ValidateClause(Xbim.Ifc2x3.PropertyResource.IfcPropertyEnumeration.IfcPropertyEnumerationClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PropertyResource.IfcPropertyListValue.ValidateClause(Xbim.Ifc2x3.PropertyResource.IfcPropertyListValue.IfcPropertyListValueClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PropertyResource.IfcPropertyTableValue.ValidateClause(Xbim.Ifc2x3.PropertyResource.IfcPropertyTableValue.IfcPropertyTableValueClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.MeasureResource.IfcConversionBasedUnit.Symbol">
+            <summary>
+            Get Symbol string for IfcConversionBasedUnit conversion unit
+            </summary>
+            <returns>String holding symbol</returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.MeasureResource.IfcDerivedUnit.FullName">
+            <summary>
+            Get the full name of the IfcDerivedUnit
+            </summary>
+            <returns>string holding full name</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.MeasureResource.IfcDerivedUnit.ValidateClause(Xbim.Ifc2x3.MeasureResource.IfcDerivedUnit.IfcDerivedUnitClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.MeasureResource.IfcMonetaryUnit.Symbol">
+            <summary>
+            Get Symbol string for money unit
+            </summary>
+            <returns>String holding symbol</returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.MeasureResource.IfcMonetaryUnit.FullEnglishName">
+             <summary>
+            Get full English name of the currency
+             </summary>
+             <returns>String as full name</returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.MeasureResource.IfcMonetaryUnit.FullNativeName">
+             <summary>
+            Get full Native name of the currency
+             </summary>
+             <returns>String holding full name</returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.MeasureResource.IfcNamedUnit.FullName">
+            <summary>
+            Get the full name of the IfcNamedUnit
+            </summary>
+            <returns>string holding full name</returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.MeasureResource.IfcNamedUnit.Symbol">
+            <summary>
+            Get the symbol of the IfcNamedUnit
+            </summary>
+            <returns>string holding symbol</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.MeasureResource.IfcNamedUnit.ValidateClause(Xbim.Ifc2x3.MeasureResource.IfcNamedUnit.IfcNamedUnitClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.MeasureResource.IfcSIUnit.Power">
+            <summary>
+              returns the power of the SIUnit prefix, i.e. MILLI = 0.001, if undefined returns 1.0
+            </summary>
+        </member>
+        <member name="P:Xbim.Ifc2x3.MeasureResource.IfcSIUnit.Symbol">
+            <summary>
+            Get Symbol string for SIUnit unit
+            </summary>
+            <returns>String holding symbol</returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.MeasureResource.IfcSIUnit.FullName">
+            <summary>
+            Returns the full name of the unit
+            </summary>
+            <returns>string holding name</returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.MeasureResource.IfcUnitAssignment.LengthUnitPower">
+            <summary>
+              Returns the factor to scale units by to convert them to SI millimetres, if they are SI units, returns 1 otherwise
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.MeasureResource.IfcUnitAssignment.SetSiLengthUnits(Xbim.Ifc2x3.MeasureResource.IfcSIUnitName,System.Nullable{Xbim.Ifc2x3.MeasureResource.IfcSIPrefix})">
+            <summary>
+            Sets the Length Unit to be SIUnit and SIPrefix, returns false if the units are not SI
+            </summary>
+            <param name = "siUnitName"></param>
+            <param name = "siPrefix"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.MeasureResource.IfcUnitAssignment.ValidateClause(Xbim.Ifc2x3.MeasureResource.IfcUnitAssignment.IfcUnitAssignmentClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.MeasureResource.IfcCompoundPlaneAngleMeasure.ValidateClause(Xbim.Ifc2x3.MeasureResource.IfcCompoundPlaneAngleMeasure.IfcCompoundPlaneAngleMeasureClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.MeasureResource.IfcHeatingValueMeasure.ValidateClause(Xbim.Ifc2x3.MeasureResource.IfcHeatingValueMeasure.IfcHeatingValueMeasureClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.MeasureResource.IfcNormalisedRatioMeasure.ValidateClause(Xbim.Ifc2x3.MeasureResource.IfcNormalisedRatioMeasure.IfcNormalisedRatioMeasureClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.MeasureResource.IfcPHMeasure.ValidateClause(Xbim.Ifc2x3.MeasureResource.IfcPHMeasure.IfcPHMeasureClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.MeasureResource.IfcPositiveLengthMeasure.ValidateClause(Xbim.Ifc2x3.MeasureResource.IfcPositiveLengthMeasure.IfcPositiveLengthMeasureClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.MeasureResource.IfcPositivePlaneAngleMeasure.ValidateClause(Xbim.Ifc2x3.MeasureResource.IfcPositivePlaneAngleMeasure.IfcPositivePlaneAngleMeasureClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.MeasureResource.IfcPositiveRatioMeasure.ValidateClause(Xbim.Ifc2x3.MeasureResource.IfcPositiveRatioMeasure.IfcPositiveRatioMeasureClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.MeasureResource.UnitExtensions.Name(Xbim.Ifc2x3.MeasureResource.IfcUnit)">
+            <summary>
+            Get the full name of the IfcUnit
+            </summary>
+            <returns>string holding full name</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.MeasureResource.UnitExtensions.Symbol(Xbim.Ifc2x3.MeasureResource.IfcUnit)">
+            <summary>
+            Get the symbol of the IfcUnit
+            </summary>
+            <returns>string holding symbol</returns>
+        </member>
+        <member name="P:Xbim.Ifc2x3.MeasureResource.XbimDimensionalExponents.LengthExponent">
+            <summary>
+              The power of the length base quantity.
+            </summary>
+        </member>
+        <member name="P:Xbim.Ifc2x3.MeasureResource.XbimDimensionalExponents.MassExponent">
+            <summary>
+              The power of the mass base quantity.
+            </summary>
+        </member>
+        <member name="P:Xbim.Ifc2x3.MeasureResource.XbimDimensionalExponents.TimeExponent">
+            <summary>
+              The power of the time base quantity.
+            </summary>
+        </member>
+        <member name="P:Xbim.Ifc2x3.MeasureResource.XbimDimensionalExponents.ElectricCurrentExponent">
+            <summary>
+              The power of the electric current base quantity.
+            </summary>
+        </member>
+        <member name="P:Xbim.Ifc2x3.MeasureResource.XbimDimensionalExponents.ThermodynamicTemperatureExponent">
+            <summary>
+              The power of the thermodynamic temperature base quantity.
+            </summary>
+        </member>
+        <member name="P:Xbim.Ifc2x3.MeasureResource.XbimDimensionalExponents.AmountOfSubstanceExponent">
+            <summary>
+              The power of the amount of substance base quantity.
+            </summary>
+        </member>
+        <member name="P:Xbim.Ifc2x3.MeasureResource.XbimDimensionalExponents.LuminousIntensityExponent">
+            <summary>
+              The power of the luminous longensity base quantity.
+            </summary>
+        </member>
+        <member name="M:Xbim.Ifc2x3.SharedMgmtElements.IfcRelSchedulesCostItems.ValidateClause(Xbim.Ifc2x3.SharedMgmtElements.IfcRelSchedulesCostItems.IfcRelSchedulesCostItemsClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.RepresentationResource.IfcGeometricRepresentationSubContext.ValidateClause(Xbim.Ifc2x3.RepresentationResource.IfcGeometricRepresentationSubContext.IfcGeometricRepresentationSubContextClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.RepresentationResource.IfcMaterialDefinitionRepresentation.ValidateClause(Xbim.Ifc2x3.RepresentationResource.IfcMaterialDefinitionRepresentation.IfcMaterialDefinitionRepresentationClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.RepresentationResource.IfcProductDefinitionShape.ValidateClause(Xbim.Ifc2x3.RepresentationResource.IfcProductDefinitionShape.IfcProductDefinitionShapeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.RepresentationResource.IfcShapeModel.ValidateClause(Xbim.Ifc2x3.RepresentationResource.IfcShapeModel.IfcShapeModelClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.RepresentationResource.IfcShapeRepresentation.ValidateClause(Xbim.Ifc2x3.RepresentationResource.IfcShapeRepresentation.IfcShapeRepresentationClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.RepresentationResource.IfcStyledRepresentation.ValidateClause(Xbim.Ifc2x3.RepresentationResource.IfcStyledRepresentation.IfcStyledRepresentationClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.RepresentationResource.IfcTopologyRepresentation.ValidateClause(Xbim.Ifc2x3.RepresentationResource.IfcTopologyRepresentation.IfcTopologyRepresentationClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.MaterialPropertyResource.IfcMechanicalMaterialProperties.ValidateClause(Xbim.Ifc2x3.MaterialPropertyResource.IfcMechanicalMaterialProperties.IfcMechanicalMaterialPropertiesClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.MaterialPropertyResource.IfcMechanicalSteelMaterialProperties.ValidateClause(Xbim.Ifc2x3.MaterialPropertyResource.IfcMechanicalSteelMaterialProperties.IfcMechanicalSteelMaterialPropertiesClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.QuantityResource.IfcPhysicalComplexQuantity.ValidateClause(Xbim.Ifc2x3.QuantityResource.IfcPhysicalComplexQuantity.IfcPhysicalComplexQuantityClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.QuantityResource.IfcQuantityArea.ValidateClause(Xbim.Ifc2x3.QuantityResource.IfcQuantityArea.IfcQuantityAreaClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.QuantityResource.IfcQuantityCount.ValidateClause(Xbim.Ifc2x3.QuantityResource.IfcQuantityCount.IfcQuantityCountClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.QuantityResource.IfcQuantityLength.ValidateClause(Xbim.Ifc2x3.QuantityResource.IfcQuantityLength.IfcQuantityLengthClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.QuantityResource.IfcQuantityTime.ValidateClause(Xbim.Ifc2x3.QuantityResource.IfcQuantityTime.IfcQuantityTimeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.QuantityResource.IfcQuantityVolume.ValidateClause(Xbim.Ifc2x3.QuantityResource.IfcQuantityVolume.IfcQuantityVolumeClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.QuantityResource.IfcQuantityWeight.ValidateClause(Xbim.Ifc2x3.QuantityResource.IfcQuantityWeight.IfcQuantityWeightClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProcessExtension.IfcProcedure.ValidateClause(Xbim.Ifc2x3.ProcessExtension.IfcProcedure.IfcProcedureClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProcessExtension.IfcTask.ValidateClause(Xbim.Ifc2x3.ProcessExtension.IfcTask.IfcTaskClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProcessExtension.IfcWorkControl.ValidateClause(Xbim.Ifc2x3.ProcessExtension.IfcWorkControl.IfcWorkControlClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProcessExtension.IfcRelAssignsTasks.ValidateClause(Xbim.Ifc2x3.ProcessExtension.IfcRelAssignsTasks.IfcRelAssignsTasksClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProfilePropertyResource.IfcGeneralProfileProperties.ValidateClause(Xbim.Ifc2x3.ProfilePropertyResource.IfcGeneralProfileProperties.IfcGeneralProfilePropertiesClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.ValidateClause(Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties.IfcStructuralProfilePropertiesClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralSteelProfileProperties.ValidateClause(Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralSteelProfileProperties.IfcStructuralSteelProfilePropertiesClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.StructuralAnalysisDomain.IfcStructuralLinearAction.ValidateClause(Xbim.Ifc2x3.StructuralAnalysisDomain.IfcStructuralLinearAction.IfcStructuralLinearActionClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.StructuralAnalysisDomain.IfcStructuralPlanarAction.ValidateClause(Xbim.Ifc2x3.StructuralAnalysisDomain.IfcStructuralPlanarAction.IfcStructuralPlanarActionClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.StructuralAnalysisDomain.IfcStructuralPointAction.ValidateClause(Xbim.Ifc2x3.StructuralAnalysisDomain.IfcStructuralPointAction.IfcStructuralPointActionClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.StructuralAnalysisDomain.IfcStructuralPointReaction.ValidateClause(Xbim.Ifc2x3.StructuralAnalysisDomain.IfcStructuralPointReaction.IfcStructuralPointReactionClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.StructuralAnalysisDomain.IfcStructuralSurfaceMemberVarying.ValidateClause(Xbim.Ifc2x3.StructuralAnalysisDomain.IfcStructuralSurfaceMemberVarying.IfcStructuralSurfaceMemberVaryingClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationDimensioningResource.IfcDimensionCalloutRelationship.ValidateClause(Xbim.Ifc2x3.PresentationDimensioningResource.IfcDimensionCalloutRelationship.IfcDimensionCalloutRelationshipClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationDimensioningResource.IfcDimensionCurve.ValidateClause(Xbim.Ifc2x3.PresentationDimensioningResource.IfcDimensionCurve.IfcDimensionCurveClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationDimensioningResource.IfcDimensionCurveDirectedCallout.ValidateClause(Xbim.Ifc2x3.PresentationDimensioningResource.IfcDimensionCurveDirectedCallout.IfcDimensionCurveDirectedCalloutClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationDimensioningResource.IfcDimensionCurveTerminator.ValidateClause(Xbim.Ifc2x3.PresentationDimensioningResource.IfcDimensionCurveTerminator.IfcDimensionCurveTerminatorClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationDimensioningResource.IfcDimensionPair.ValidateClause(Xbim.Ifc2x3.PresentationDimensioningResource.IfcDimensionPair.IfcDimensionPairClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationDimensioningResource.IfcPreDefinedDimensionSymbol.ValidateClause(Xbim.Ifc2x3.PresentationDimensioningResource.IfcPreDefinedDimensionSymbol.IfcPreDefinedDimensionSymbolClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationDimensioningResource.IfcPreDefinedPointMarkerSymbol.ValidateClause(Xbim.Ifc2x3.PresentationDimensioningResource.IfcPreDefinedPointMarkerSymbol.IfcPreDefinedPointMarkerSymbolClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationDimensioningResource.IfcPreDefinedTerminatorSymbol.ValidateClause(Xbim.Ifc2x3.PresentationDimensioningResource.IfcPreDefinedTerminatorSymbol.IfcPreDefinedTerminatorSymbolClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+        <member name="M:Xbim.Ifc2x3.PresentationDimensioningResource.IfcStructuredDimensionCallout.ValidateClause(Xbim.Ifc2x3.PresentationDimensioningResource.IfcStructuredDimensionCallout.IfcStructuredDimensionCalloutClause)">
+            <summary>
+            Tests the express where-clause specified in param 'clause'
+            </summary>
+            <param name="clause">The express clause to test</param>
+            <returns>true if the clause is satisfied.</returns>
+        </member>
+    </members>
+</doc>

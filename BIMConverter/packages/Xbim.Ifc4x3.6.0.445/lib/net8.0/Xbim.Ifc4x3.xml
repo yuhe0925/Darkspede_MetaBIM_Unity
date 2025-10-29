@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Xbim.Ifc4x3</name>
+    </assembly>
+    <members>
+        <member name="P:Xbim.Ifc4x3.EntityFactoryIfc4x3Add2.SchemaVersion">
+            <summary>
+            Gets the Ifc Schema version of the model if this is IFC schema
+            </summary>
+        </member>
+        <member name="M:Xbim.Ifc4x3.GeometryResource.IfcDirection.op_Implicit(Xbim.Common.Geometry.XbimVector3D)~Xbim.Ifc4x3.GeometryResource.IfcDirection">
+            <summary>
+            Do not use this conversion operator unless you are absolutely sure you know what you do.
+            Resulting object is not a properpart of the model and will throw an exception if you
+            try to modify it or anything. It is only used in IfcGeometricRepresentationSubContext.TrueNorth where
+            derived attribute is returned in derived overwriting attribute.
+            </summary>
+            <param name="vector"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc4x3.GeometryResource.IfcPoint.Xbim#Ifc4x3#GeometricModelResource#IfcGeometricSetSelect#Dim">
+            <summary>
+            This is always overriden in specific non-abstract classes
+            </summary>
+        </member>
+        <member name="P:Xbim.Ifc4x3.GeometryResource.IfcPoint.Xbim#Ifc4#GeometricModelResource#IfcGeometricSetSelect#Dim">
+            <summary>
+            This is always overriden in specific non-abstract classes
+            </summary>
+        </member>
+        <member name="T:Xbim.Ifc4x3.IfcValueHelper">
+            <summary>
+            This helper is using reflection because IfcValue types are identical between IFC4 and IFC4x3
+            </summary>
+        </member>
+        <member name="P:Xbim.Ifc4x3.ProductExtension.IfcBuilding.Site">
+            <summary>
+            Returns the site (if any) that contains this building, null if the building is not decomposing a site
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc4x3.ProductExtension.IfcBuilding.Buildings">
+            <summary>
+            Returns the buidlings that decompose this building
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc4x3.ProductExtension.IfcBuilding.Spaces">
+            <summary>
+            Returns all spaces that are sub-spaces of this building
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc4x3.ProductExtension.IfcBuilding.BuildingStoreys">
+            <summary>
+            Returns the building storeys for this floor  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc4x3.ProductExtension.IfcBuildingStorey.Site">
+            <summary>
+            Returns the site (if any) that contains this building, null if the building is not decomposing a site
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc4x3.ProductExtension.IfcBuildingStorey.Buildings">
+            <summary>
+            Returns the buidlings that decompose this building
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc4x3.ProductExtension.IfcBuildingStorey.Spaces">
+            <summary>
+            Returns all spaces that are sub-spaces of this building
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc4x3.ProductExtension.IfcBuildingStorey.BuildingStoreys">
+            <summary>
+            Returns the building storeys for this floor  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc4x3.ProductExtension.IfcBuildingStorey.GrossFloorArea">
+            <summary>
+            Returns the Gross Floor Area, if the element base quantity GrossFloorArea is defined
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Xbim.Ifc4x3.ProductExtension.IfcBuildingStorey.GetQuantity``1(System.String,System.String)">
+            <summary>
+            Returns the first quantity in the property set pSetName of name qName
+            </summary>
+            <typeparam name="TQType"></typeparam>
+            <param name="pSetName"></param>
+            <param name="qName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Xbim.Ifc4x3.ProductExtension.IfcBuildingStorey.GetQuantity``1(System.String)">
+            <summary>
+            Returns the first quantity that matches the quantity name
+            </summary>
+            <typeparam name="TQType"></typeparam>
+            <param name="qName"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc4x3.ProductExtension.IfcSite.Buildings">
+            <summary>
+            Returns the buidlings that decompose this building
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc4x3.ProductExtension.IfcSpace.Spaces">
+            <summary>
+            Returns all spaces that are sub-spaces of this building
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Xbim.Ifc4x3.Kernel.IfcProject.Buildings">
+            <summary>
+            Returns all buildings at the highest level of spatial structural decomposition (i.e. root buildings)
+            </summary>
+        </member>
+        <member name="M:Xbim.Ifc4x3.Kernel.IfcProject.Initialize(Xbim.Common.ProjectUnits)">
+            <summary>
+              Sets up the default units as SI
+              Creates the GeometricRepresentationContext for a Model view, required by Ifc compliance
+            </summary>
+        </member>
+        <member name="P:Xbim.Ifc4x3.MeasureResource.IfcDerivedUnit.FullName">
+            <summary>
+            Get the full name of the IfcDerivedUnit
+            </summary>
+            <returns>string holding full name</returns>
+        </member>
+        <member name="M:Xbim.Ifc4x3.MeasureResource.IfcDerivedUnit.GetName(Xbim.Ifc4x3.MeasureResource.IfcUnit)">
+            <summary>
+            Get the full name of the IfcUnit
+            </summary>
+            <returns>string holding full name</returns>
+        </member>
+        <member name="P:Xbim.Ifc4x3.MeasureResource.IfcNamedUnit.FullName">
+            <summary>
+            Get the full name of the IfcNamedUnit
+            </summary>
+            <returns>string holding full name</returns>
+        </member>
+        <member name="P:Xbim.Ifc4x3.MeasureResource.IfcNamedUnit.Symbol">
+            <summary>
+            Get the symbol of the IfcNamedUnit
+            </summary>
+            <returns>string holding symbol</returns>
+        </member>
+        <member name="P:Xbim.Ifc4x3.MeasureResource.IfcSIUnit.Power">
+            <summary>
+              returns the power of the SIUnit prefix, i.e. MILLI = 0.001, if undefined returns 1.0
+            </summary>
+        </member>
+        <member name="P:Xbim.Ifc4x3.MeasureResource.IfcSIUnit.Symbol">
+            <summary>
+            Get Symbol string for SIUnit unit
+            </summary>
+            <returns>String holding symbol</returns>
+        </member>
+        <member name="P:Xbim.Ifc4x3.MeasureResource.IfcSIUnit.FullName">
+            <summary>
+            Returns the full name of the unit
+            </summary>
+            <returns>string holding name</returns>
+        </member>
+    </members>
+</doc>
