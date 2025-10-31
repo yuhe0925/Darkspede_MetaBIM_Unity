@@ -1,14 +1,21 @@
-from annotated_types import Len
+﻿from annotated_types import Len
 from black import target_version_option_callback
-from core import dataset, mongodb
-from core.logger import Logger  
+from core import dataset, mongodb,IFCOffscreenRenderer
+from core.logger import Logger 
 from typing import Optional, Tuple, Callable, Dict
+from PIL import Image
 import json
 import ifcopenshell
+import ifcopenshell.geom
 import re
 import tempfile
 import requests
 import os
+import math
+import numpy as np
+import trimesh
+import pyrender
+
 
 '''
 Converter class for handling IFC conversion.
@@ -25,9 +32,9 @@ class converter:
     def print_progress(done, total):
         if total:
             pct = (done / total) * 100
-            Logger.info(f"\rDownloading... {pct:.1f}% ({done}/{total} bytes)", end="")
+            Logger.info(f"\rDownloading... {pct:.1f}% ({done}/{total} bytes)")
         else:
-            Logger.info(f"\rDownloading... {done} bytes", end="")
+            Logger.info(f"\rDownloading... {done} bytes")
         
 
     def _disposition_filename(content_disposition: str) -> Optional[str]:
@@ -57,7 +64,23 @@ class converter:
 
         return None
 
+    """
+    Download an IFC file from a URL and optionally open it with IfcOpenShell.
 
+    Returns:
+        (local_path, ifc_model_or_None)
+
+    Args:
+        url: http(s) or pre-signed URL to the IFC file.
+        dest_dir: folder to save the file. Defaults to the system temp dir.
+        filename: force a name (e.g., "model.ifc"); if None, infer from headers or URL.
+        headers: optional HTTP headers (e.g., {"Authorization": "Bearer <token>"}).
+        timeout: per-request timeout in seconds.
+        verify_tls: set False to allow self-signed certs (not recommended).
+        size_limit_mb: if set, abort if file exceeds this size.
+        open_with_ifcopenshell: open and return a model if IfcOpenShell is installed.
+        progress: optional callback called with (downloaded_bytes, total_bytes or None).
+    """
     def load_ifc_from_url(
             url: str,
             dest_dir: Optional[str] = None,
@@ -69,23 +92,7 @@ class converter:
             open_with_ifcopenshell: bool = True,
             progress: Optional[Callable[[int, Optional[int]], None]] = None,  # (downloaded_bytes, total_bytes)
         ) -> Tuple[str, Optional[object]]:
-        """
-        Download an IFC file from a URL and optionally open it with IfcOpenShell.
 
-        Returns:
-            (local_path, ifc_model_or_None)
-
-        Args:
-            url: http(s) or pre-signed URL to the IFC file.
-            dest_dir: folder to save the file. Defaults to the system temp dir.
-            filename: force a name (e.g., "model.ifc"); if None, infer from headers or URL.
-            headers: optional HTTP headers (e.g., {"Authorization": "Bearer <token>"}).
-            timeout: per-request timeout in seconds.
-            verify_tls: set False to allow self-signed certs (not recommended).
-            size_limit_mb: if set, abort if file exceeds this size.
-            open_with_ifcopenshell: open and return a model if IfcOpenShell is installed.
-            progress: optional callback called with (downloaded_bytes, total_bytes or None).
-        """
         dest_dir = dest_dir or tempfile.gettempdir()
         os.makedirs(dest_dir, exist_ok=True)
 
@@ -161,7 +168,56 @@ class converter:
 
         return local_path, model
 
-            
+    
+    def _ifc_to_trimesh(model) -> trimesh.Trimesh:
+        import ifcopenshell, ifcopenshell.geom
+        s = ifcopenshell.geom.settings()
+        s.set(s.WELD_VERTICES, True)
+        s.set(s.USE_WORLD_COORDS, True)
+        it = ifcopenshell.geom.iterator(s, model); it.initialize()
+        meshes = []
+        while True:
+            shape = it.get()
+            if shape is None: break
+            g = shape.geometry
+            if len(g.verts) and len(g.faces):
+                verts = np.asarray(g.verts, dtype=float).reshape(-1, 3)
+                faces = np.asarray(g.faces, dtype=np.int64).reshape(-1, 3)
+                meshes.append(trimesh.Trimesh(vertices=verts, faces=faces, process=False))
+            if not it.next(): break
+        if not meshes:
+            return trimesh.Trimesh(vertices=np.zeros((0,3)), faces=np.zeros((0,3),dtype=np.int64), process=False)
+        return trimesh.util.concatenate(meshes)
+
+
+    """
+    Convenience: download IFC, open with IfcOpenShell, convert to mesh, return ready renderer.
+    """
+    def load_and_prepare_renderer_from_url(ifc_url: str, dest_dir: str = r".\download") -> Tuple[str, object, IFCOffscreenRenderer]:
+
+        path, model = converter.load_ifc_from_url(
+            ifc_url,
+            dest_dir=dest_dir,
+            timeout=60,
+            size_limit_mb=500,
+            open_with_ifcopenshell=True,
+            progress=converter.print_progress
+        )
+        if not model:
+            raise RuntimeError("Failed to open IFC model.")
+        renderer = converter.build_renderer_from_ifc_model(model)
+        return path, model, renderer
+
+    """
+    Convert IFC -> trimesh and prepare an offscreen renderer ready for snapshots.
+    """
+    def build_renderer_from_ifc_model(model) -> IFCOffscreenRenderer:
+        mesh = converter._ifc_to_trimesh(model)
+        Logger.info(f"TriMesh: verts={len(mesh.vertices)}, faces={len(mesh.faces)}")
+        return IFCOffscreenRenderer.IFCOffscreenRenderer(mesh, background=(255, 255, 255, 0), fov_y_deg=50.0, light_intensity=2400.0)
+
+
+
     '''
     Main conversion process 
     '''
@@ -206,17 +262,26 @@ class converter:
 
         path, model = converter.load_ifc_from_url(
             ifc_path,
-            dest_dir=r"E:\workspace\downloads",
+            dest_dir=r".\download",
             timeout=60,
-            size_limit_mb=500,  # optional safety
+            size_limit_mb=500,  # optional safety, TODO, add to config
             open_with_ifcopenshell=True,
             progress=converter.print_progress
             )
 
-        Logger.info("\nSaved to:", path)
+        Logger.info("Saved to: " + path)
 
-        if model:
-            # Example: list all products count
-            products = model.by_type("IfcProduct")
-            Logger.info("Products:", len(products))
+        if not model:
+            Logger.error("Not model loaded, Stop process")
+            return
 
+        # Example: list all products count
+        products = model.by_type("IfcProduct")
+        Logger.info(f"Product Elements: {len(products)}")
+
+
+        renderer = converter.build_renderer_from_ifc_model(model)
+
+
+
+     
